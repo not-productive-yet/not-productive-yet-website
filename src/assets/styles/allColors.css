@@ -1,3 +1,14 @@
 :root {
+  /*common colors */
+  --nav-orange: #f6ab6d;
+  --nav-hover-offwhite: #faebd7;
+  --black: #000;
+  /* poem collection colors */
   --red: #780404;
+  --yellow: #dfc980;
+  --light-yellow: #fffb80;
+  --orange: #f39147;
+  --purple: #4d3cf3;
+  --light-blue: #76d9ed;
+  --lighter-blue: #a3d6e0;
 }

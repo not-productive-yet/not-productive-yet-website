@@ -4,7 +4,7 @@
   height: 100% !important;
   width: 5%;
   overflow: hidden !important;
-  background-color: #f6ab6d !important;
+  background-color: var(--nav-orange) !important;
 }
 
 .MuiList-root {
@@ -21,16 +21,16 @@
 
 .MuiListItem-root:hover {
   background-color: transparent !important;
-  color: antiquewhite;
+  color: var(--nav-hover-offwhite);
 }
 
 .nav-link {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 .nav-link:hover {
-  color: antiquewhite;
+  color: var(--nav-hover-offwhite);
 }
 
 .nav-title {

@@ -7,7 +7,7 @@ div.MuiButtonGroup-root button {
   border-radius: 0 !important;
   padding: 0 !important;
   margin-right: 1.5em !important;
-  color: black !important;
+  color: var(--black) !important;
 }
 
 button.MuiButton-root.red:hover {
@@ -16,22 +16,22 @@ button.MuiButton-root.red:hover {
 }
 
 button.MuiButton-root.yellow:hover {
-  color: #dfc980 !important;
+  color: var(--yellow) !important;
   background-color: transparent !important;
 }
 
 button.MuiButton-root.orange:hover {
-  color: #f39147 !important;
+  color: var(--orange) !important;
   background-color: transparent !important;
 }
 
 button.MuiButton-root.purple:hover {
-  color: #4d3cf3 !important;
+  color: var(--purple) !important;
   background-color: transparent !important;
 }
 
 button.MuiButton-root.blue:hover {
-  color: #76d9ed !important;
+  color: var(--light-blue) !important;
   background-color: transparent !important;
 }
 
@@ -57,21 +57,21 @@ li.MuiImageListItem-root:hover > img {
 }
 
 li.MuiImageListItem-root.yellow {
-  background-color: #fffb80;
+  background-color: var(--light-yellow);
 }
 
 li.MuiImageListItem-root.purple {
-  background-color: #4d3cf3;
+  background-color: var(--purple);
 }
 li.MuiImageListItem-root.orange {
-  background-color: #f39147;
+  background-color: var(--orange);
 }
 li.MuiImageListItem-root.red {
   background-color: var(--red);
 }
 
 li.MuiImageListItem-root.blue {
-  background-color: #a3d6e0;
+  background-color: var(--lighter-blue);
 }
 
 /* poem text */
