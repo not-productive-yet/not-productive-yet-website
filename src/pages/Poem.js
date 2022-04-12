@@ -1,15 +1,19 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Container, Box, Divider } from "@mui/material";
+import ArrowLeftRoundedIcon from "@mui/icons-material/ArrowLeftRounded";
+import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
 import { poems } from "../assets/data/poems/poems";
+import PageNotFound from "../pages/PageNotFound";
 
 export default function Poem() {
   const [text, setText] = useState("");
   const [poem, setPoem] = useState({});
-  let paramId = useParams().poemId;
+  let navigate = useNavigate();
+  let paramId = parseInt(useParams().poemId);
 
   useEffect(() => {
-    const poem = poems.find((item) => item.id === parseInt(paramId));
+    const poem = poems.find((item) => item.id === paramId);
     setPoem(poem);
 
     async function getText() {
@@ -20,6 +24,18 @@ export default function Poem() {
     }
     getText();
   }, [paramId]);
+
+  function goToPrevPoem() {
+    navigate(`/poems/${paramId - 1}`);
+  }
+
+  function goToNextPoem() {
+    navigate(`/poems/${paramId + 1}`);
+  }
+
+  function goToAllPoems() {
+    navigate(`/poems`);
+  }
 
   return (
     <>
@@ -33,11 +49,34 @@ export default function Poem() {
               </div>
             </Box>
             <div className="poem-text">{text}</div>
+            <span className="nav-arrows">
+              {paramId - 1 !== 0 ? (
+                <ArrowLeftRoundedIcon
+                  fontSize="large"
+                  className="nav-arrow"
+                  onClick={() => goToPrevPoem()}
+                />
+              ) : (
+                ""
+              )}
+              {poems.indexOf(paramId + 1) !== -1 ? (
+                <ArrowRightRoundedIcon
+                  fontSize="large"
+                  className="nav-arrow"
+                  onClick={() => goToNextPoem()}
+                />
+              ) : (
+                ""
+              )}
+            </span>
           </div>
           <Divider />
+          <div className="back-text" onClick={() => goToAllPoems()}>
+            back to all poems
+          </div>
         </Container>
       ) : (
-        ""
+        <PageNotFound />
       )}
     </>
   );

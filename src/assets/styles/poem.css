@@ -9,3 +9,24 @@
   font-family: "Josefin Slab", serif;
   font-size: 14pt;
 }
+
+.nav-arrows {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-arrow {
+  cursor: pointer;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.back-text {
+  margin-top: 2%;
+  cursor: pointer;
+  text-align: center;
+  color: var(--nav-orange);
+  font-size: 10pt;
+}
