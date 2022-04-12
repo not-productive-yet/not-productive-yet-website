@@ -1,0 +1,47 @@
+/* nav */
+.MuiPaper-root {
+  border: none !important;
+  height: 100% !important;
+  width: 5%;
+  overflow: hidden !important;
+  background-color: #f6ab6d !important;
+}
+
+.MuiList-root {
+  display: flex;
+  flex-flow: row-reverse;
+  rotate: 270deg;
+}
+
+.MuiListItem-root {
+  width: 100%;
+  flex: 1;
+  margin: 30% !important;
+}
+
+.MuiListItem-root:hover {
+  background-color: transparent !important;
+  color: antiquewhite;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link:hover {
+  color: antiquewhite;
+}
+
+.nav-title {
+  rotate: 90deg;
+  margin: 10% 30%;
+  margin-left: 140%;
+}
+
+/* pages */
+.page-title {
+  margin-top: 5%;
+  margin-left: 10pt;
+  font-size: 30pt;
+}

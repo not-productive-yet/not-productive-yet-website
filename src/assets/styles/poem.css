@@ -1,0 +1,11 @@
+.poem-title {
+  margin-top: 3em;
+  text-align: center;
+}
+.poem-text {
+  white-space: break-spaces;
+  line-height: 1.5em;
+  margin: 2em 2em;
+  font-family: "Josefin Slab", serif;
+  font-size: 14pt;
+}

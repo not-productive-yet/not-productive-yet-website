@@ -1,6 +1,21 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import PoemCards from "./pages/PoemCards";
+import PageNotFound from "./pages/PageNotFound";
+import Poem from "./pages/Poem";
+import Navbar from "./components/Navbar";
+import "./assets/styles/app.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="poems" element={<PoemCards />} />
+      <Route path="poems/:poemId" element={<Poem />} />
+      <Route path="*" element={<PageNotFound />} />
+    </Routes>
+  </BrowserRouter>
+);
