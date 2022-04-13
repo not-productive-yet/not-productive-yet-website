@@ -35,6 +35,11 @@ button.MuiButton-root.blue:hover {
   background-color: transparent !important;
 }
 
+button.MuiButton-root.black:hover {
+  color: var(--light-gray) !important;
+  background-color: transparent !important;
+}
+
 /* poem image */
 li.MuiImageListItem-root {
   cursor: pointer;
@@ -72,6 +77,10 @@ li.MuiImageListItem-root.red {
 
 li.MuiImageListItem-root.blue {
   background-color: var(--lighter-blue);
+}
+
+li.MuiImageListItem-root.black {
+  background-color: var(--gray);
 }
 
 /* poem text */

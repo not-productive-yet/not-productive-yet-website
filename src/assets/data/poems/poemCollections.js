@@ -1,19 +1,23 @@
 export const poemCollections = [
   {
-    name: "definitely not above board",
+    name: "about creating",
+    color: "yellow",
+  },
+  {
+    name: "not above board",
     color: "purple",
+  },
+  {
+    name: "of love, light and dust",
+    color: "red",
   },
   {
     name: "color theory",
     color: "blue",
   },
   {
-    name: "about creating",
-    color: "yellow",
-  },
-  {
-    name: "of love, light and dust",
-    color: "red",
+    name: "lies",
+    color: "black",
   },
   {
     name: "drabbles",

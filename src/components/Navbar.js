@@ -7,13 +7,15 @@ export default function Navbar() {
       <Drawer anchor="left" variant="permanent">
         <List>
           <h2 className="nav-title">not-prod-yet</h2>
-          {["Poems", "Stories", "Other1", "Other2"].map((text, index) => (
-            <ListItem button key={text}>
-              <Link className="nav-link" to="/poems">
-                {text}
-              </Link>
-            </ListItem>
-          ))}
+          {["Poems", "Stories", "Spare Thoughts", "Other"].map(
+            (text, index) => (
+              <ListItem button key={text}>
+                <Link className="nav-link" to="/poems">
+                  {text}
+                </Link>
+              </ListItem>
+            )
+          )}
         </List>
       </Drawer>
     </Container>

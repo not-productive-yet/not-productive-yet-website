@@ -11,6 +11,8 @@ export default function Poem() {
   const [poem, setPoem] = useState({});
   let navigate = useNavigate();
   let paramId = parseInt(useParams().poemId);
+  let nextPoemExists =
+    poems.find((poem) => poem.id === paramId + 1) !== undefined;
 
   useEffect(() => {
     const poem = poems.find((item) => item.id === paramId);
@@ -59,7 +61,7 @@ export default function Poem() {
               ) : (
                 ""
               )}
-              {poems.indexOf(paramId + 1) !== -1 ? (
+              {nextPoemExists ? (
                 <ArrowRightRoundedIcon
                   fontSize="large"
                   className="nav-arrow"
