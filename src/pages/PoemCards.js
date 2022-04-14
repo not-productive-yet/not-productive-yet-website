@@ -70,7 +70,7 @@ export default function Cards() {
         {poems.map((item) => (
           <ImageListItem
             key={item.title}
-            sx={{ width: 260, mb: "1em" }}
+            sx={{ width: 250, mb: "1em" }}
             onClick={() => goToPoem(item.id)}
             className={item.color}
           >
