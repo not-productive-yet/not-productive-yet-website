@@ -7,31 +7,47 @@ import {
   Box,
   Container,
 } from "@mui/material";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Outlet, useNavigate, useParams } from "react-router-dom";
 import { poems as poemData } from "../assets/data/poems/poems";
 import { poemCollections } from "../assets/data/poems/poemCollections";
-import { useState, useEffect } from "react";
+import {
+  formatCollectionParam,
+  getCollectionFromParam,
+} from "../helpers/paramHelpers";
 
 export default function Cards() {
   const [poems, setPoems] = useState([]);
+  const [collection, setCollection] = useState("");
   let navigate = useNavigate();
+  let paramCollection = getCollectionFromParam(useParams());
 
   useEffect(() => {
-    setPoems(poemData);
-  }, []);
+    paramCollection
+      ? setPoems(poemData.filter((poem) => poem.collection === paramCollection))
+      : setPoems(poemData);
 
-  function goToPoem(id) {
-    navigate(`/poems/${id}`);
+    setCollection(paramCollection);
+  }, [paramCollection]);
+
+  function goToPoems() {
+    navigate(`/poems`);
   }
 
-  function filterCollection(collection) {
-    setPoems(poemData.filter((poem) => poem.collection === collection));
+  function goToPoem(id) {
+    collection
+      ? navigate(`/poem/${formatCollectionParam(collection)}/${id}`)
+      : navigate(`/poem/${id}`);
+  }
+
+  function goToCollection(collection) {
+    navigate(`/poems/${formatCollectionParam(collection)}`);
   }
 
   return (
     <Container maxWidth="md">
       <Box>
-        <h1 className="page-title" onClick={() => setPoems(poemData)}>
+        <h1 className="page-title" onClick={goToPoems}>
           some poems
         </h1>
       </Box>
@@ -44,7 +60,7 @@ export default function Cards() {
           <Button
             className={item.color}
             key={item.name}
-            onClick={() => filterCollection(item.name)}
+            onClick={() => goToCollection(item.name)}
           >
             {item.name}
           </Button>

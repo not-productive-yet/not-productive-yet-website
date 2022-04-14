@@ -10,32 +10,38 @@ div.MuiButtonGroup-root button {
   color: var(--black) !important;
 }
 
-button.MuiButton-root.red:hover {
+button.MuiButton-root.red:hover,
+button.MuiButton-root.red:focus {
   color: var(--red) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.yellow:hover {
+button.MuiButton-root.yellow:hover,
+button.MuiButton-root.yellow:focus {
   color: var(--yellow) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.orange:hover {
+button.MuiButton-root.orange:hover,
+button.MuiButton-root.orange:focus {
   color: var(--orange) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.purple:hover {
+button.MuiButton-root.purple:hover,
+button.MuiButton-root.purple:focus {
   color: var(--purple) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.blue:hover {
+button.MuiButton-root.blue:hover,
+button.MuiButton-root.blue:focus {
   color: var(--light-blue) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.black:hover {
+button.MuiButton-root.black:hover,
+button.MuiButton-root.black:focus {
   color: var(--light-gray) !important;
   background-color: transparent !important;
 }
