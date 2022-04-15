@@ -1,11 +1,24 @@
-import { Box, Container } from "@mui/material";
+import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  let navigate = useNavigate();
+
+  function goToPoems() {
+    navigate(`/poems`);
+  }
+
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ mb: "2em" }}>
-        <h3>empty home</h3>
-      </Box>
-    </Container>
+    <div className="home">
+      <img
+        className="home-image"
+        src={require("../assets/images/real_artist.jpg")}
+        alt="real artist"
+      />
+      <p className="home-text">(not really)</p>
+      <Button className="home-button" variant="outlined" onClick={goToPoems}>
+        Check out my stuff
+      </Button>
+    </div>
   );
 }
