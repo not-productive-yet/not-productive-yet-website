@@ -5,6 +5,7 @@ div.MuiButtonGroup-root {
 }
 
 div.MuiButtonGroup-root button {
+  letter-spacing: 1.5pt;
   border: none !important;
   border-radius: 0 !important;
   padding: 0 !important;
@@ -100,8 +101,8 @@ li.MuiImageListItem-root div.MuiImageListItemBar-root {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s ease;
-  text-align: center;
-  width: fit-content;
+  text-align: center !important;
+  width: 100%;
   font-weight: 300;
   font-style: normal;
 }
@@ -112,13 +113,18 @@ li.MuiImageListItem-root:hover div.MuiImageListItemBar-root {
 }
 
 .MuiImageListItemBar-title {
-  width: 10em;
+  width: 100%;
   overflow-wrap: break-word !important;
   white-space: break-spaces !important;
   font-size: 13pt !important;
+  text-align: center !important;
 }
 
 .MuiImageListItemBar-subtitle {
   text-transform: uppercase;
+  overflow-wrap: break-word !important;
+  white-space: break-spaces !important;
+
   font-size: 10pt !important;
+  letter-spacing: 1pt;
 }

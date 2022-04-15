@@ -22,7 +22,7 @@ export const poems = [
     img: require("../../images/smoke.jpg"),
     imgAlt: "woman smoking",
     title: "too meta, too late",
-    collection: "not above board",
+    collection: "definitely not above board",
     color: "purple",
     text: "/poems/too_meta_too_late.txt",
   },
