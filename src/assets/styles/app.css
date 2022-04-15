@@ -29,6 +29,13 @@ body {
   .MuiButton-root {
     justify-content: flex-start !important;
   }
+  .MuiPaper-root {
+    width: 20%;
+  }
+
+  .MuiListItem-root {
+    margin: 1em !important;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
@@ -40,6 +47,13 @@ body {
     width: 230px !important;
     height: 190px !important;
   }
+  .MuiPaper-root {
+    width: 10%;
+  }
+
+  .MuiListItem-root {
+    margin: 1em !important;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -50,6 +64,12 @@ body {
   .MuiImageListItem-root {
     width: 240px !important;
     height: 200px !important;
+  }
+  .MuiPaper-root {
+    width: 6%;
+  }
+  .MuiListItem-root {
+    margin: 1em !important;
   }
 }
 

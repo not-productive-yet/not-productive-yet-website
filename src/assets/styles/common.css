@@ -1,10 +1,10 @@
 /* nav */
 .MuiPaper-root {
   border: none !important;
-  height: 100% !important;
-  width: 5%;
-  overflow: hidden !important;
   background-color: var(--nav-orange) !important;
+  width: 5%;
+  overflow-x: hidden !important;
+  scrollbar-width: none !important;
 }
 
 .MuiList-root {
@@ -14,9 +14,7 @@
 }
 
 .MuiListItem-root {
-  width: 100%;
-  flex: 1;
-  margin: 30% !important;
+  margin: 2em !important;
 }
 
 .MuiListItem-root:hover {
@@ -29,6 +27,10 @@
   color: var(--black);
 }
 
+.nav-title > .nav-link:hover {
+  color: var(--black) !important;
+}
+
 .nav-link:hover {
   color: var(--nav-hover-offwhite);
 }
@@ -39,6 +41,21 @@
   margin-left: 140%;
 }
 
+.menu-icon {
+  font-size: 25pt !important;
+  margin: 10pt;
+  display: block !important;
+  color: var(--nav-orange);
+  cursor: pointer;
+}
+.menu-icon.hidden {
+  display: none !important;
+}
+
+.fake-drawer > .MuiPaper-root {
+  background-color: transparent !important;
+  width: fit-content !important;
+}
 /* pages */
 .page-title {
   margin-top: 5%;
