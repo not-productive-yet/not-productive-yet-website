@@ -58,7 +58,9 @@ export default function Cards() {
       >
         {poemCollections.map((item) => (
           <Button
-            className={item.color}
+            className={`${item.color} ${
+              collection === item.name && "selected"
+            }`}
             key={item.name}
             onClick={() => goToCollection(item.name)}
           >

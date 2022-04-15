@@ -12,37 +12,37 @@ div.MuiButtonGroup-root button {
 }
 
 button.MuiButton-root.red:hover,
-button.MuiButton-root.red:focus {
+button.MuiButton-root.red.selected {
   color: var(--red) !important;
   background-color: transparent !important;
 }
 
 button.MuiButton-root.yellow:hover,
-button.MuiButton-root.yellow:focus {
+button.MuiButton-root.yellow.selected {
   color: var(--yellow) !important;
   background-color: transparent !important;
 }
 
 button.MuiButton-root.orange:hover,
-button.MuiButton-root.orange:focus {
+button.MuiButton-root.orange.selected {
   color: var(--orange) !important;
   background-color: transparent !important;
 }
 
 button.MuiButton-root.purple:hover,
-button.MuiButton-root.purple:focus {
+button.MuiButton-root.purple.selected {
   color: var(--purple) !important;
   background-color: transparent !important;
 }
 
 button.MuiButton-root.blue:hover,
-button.MuiButton-root.blue:focus {
+button.MuiButton-root.blue.selected {
   color: var(--light-blue) !important;
   background-color: transparent !important;
 }
 
 button.MuiButton-root.black:hover,
-button.MuiButton-root.black:focus {
+button.MuiButton-root.black.selected {
   color: var(--light-gray) !important;
   background-color: transparent !important;
 }
@@ -112,7 +112,7 @@ li.MuiImageListItem-root:hover div.MuiImageListItemBar-root {
 }
 
 .MuiImageListItemBar-title {
-  width: 260px;
+  width: 10em;
   overflow-wrap: break-word !important;
   white-space: break-spaces !important;
   font-size: 13pt !important;

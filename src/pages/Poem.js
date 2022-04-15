@@ -59,6 +59,10 @@ export default function Poem() {
     navigate(`/poems`);
   }
 
+  function goToCollection(collection) {
+    navigate(`/poems/${formatCollectionParam(collection)}`);
+  }
+
   return (
     <>
       {checkPoemPageExists(poem, collection) ? (
@@ -67,7 +71,12 @@ export default function Poem() {
             <Box>
               <div className={`poem-title ${poem.color}`}>
                 <h2>{poem.title}</h2>
-                <h4 className="poem-collection">{poem.collection}</h4>
+                <h4
+                  className="poem-collection"
+                  onClick={() => goToCollection(poem.collection)}
+                >
+                  {poem.collection}
+                </h4>
               </div>
             </Box>
             <div className="poem-text">{poemText}</div>

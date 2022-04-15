@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+.poem-collection {
+  cursor: pointer;
+}
+
 .nav-arrows {
   width: 100%;
   margin: auto;
