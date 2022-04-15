@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, PageNotFound, Poem, PoemCards } from "./pages";
-import Navbar from "./components/Navbar";
+import { Navbar, Footer } from "./components/";
 import { Container } from "@mui/material";
 
 export default function App() {
@@ -17,6 +17,7 @@ export default function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </Container>
   );
 }

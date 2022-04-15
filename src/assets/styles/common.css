@@ -46,3 +46,18 @@
   font-size: 30pt;
   cursor: pointer;
 }
+
+/* footer */
+footer {
+  text-align: center;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10pt !important;
+  margin-top: 15%;
+  letter-spacing: 1pt;
+}
+
+.heart {
+  color: var(--nav-orange);
+  font-size: 10pt !important;
+}
