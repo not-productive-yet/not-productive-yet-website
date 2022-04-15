@@ -3,8 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Container, Box, Divider } from "@mui/material";
 import ArrowLeftRoundedIcon from "@mui/icons-material/ArrowLeftRounded";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
-import { poems } from "../assets/data/poems/poems";
 import PageNotFound from "../pages/PageNotFound";
+import { poems } from "../assets/data/poems/poems";
 import {
   formatCollectionParam,
   getCollectionFromParam,
@@ -26,13 +26,7 @@ export default function Poem() {
     setPoem(poem);
     setCollection(paramCollection);
 
-    async function getPoemText() {
-      let data = await fetch(poem.text)
-        .then((response) => response.text())
-        .then((text) => text);
-      setPoemText(data);
-    }
-    if (poem) getPoemText();
+    if (poem) setPoemText(poem.text);
   }, [paramId, paramCollection]);
 
   function goToPrevPoem() {

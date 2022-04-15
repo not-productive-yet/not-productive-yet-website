@@ -1,3 +1,36 @@
+import { alienCourtship } from "./poemTexts/alien_courtship";
+import { andFlourish } from "./poemTexts/and_flourish";
+import { artHistory } from "./poemTexts/art_history";
+import { badTaste } from "./poemTexts/bad_taste";
+import { california } from "./poemTexts/california";
+import { cavedIn } from "./poemTexts/caved_in";
+import { cloudFloater } from "./poemTexts/cloud_floater";
+import { create } from "./poemTexts/create";
+import { dethrone } from "./poemTexts/dethrone";
+import { escapism } from "./poemTexts/escapism";
+import { forest } from "./poemTexts/forest";
+import { hibernation } from "./poemTexts/hibernation";
+import { laundryDay } from "./poemTexts/laundry_day";
+import { lethal } from "./poemTexts/lethal";
+import { mindReader } from "./poemTexts/mind_reader";
+import { officeHours } from "./poemTexts/office_hours";
+import { outTheWindow } from "./poemTexts/out_the_window";
+import { paperBoat } from "./poemTexts/paper_boat";
+import { reality } from "./poemTexts/reality";
+import { releaseMe } from "./poemTexts/release_me";
+import { ropes } from "./poemTexts/ropes";
+import { sharpshooter } from "./poemTexts/sharpshooter";
+import { solarDeath } from "./poemTexts/solar_death";
+import { spaceDebris } from "./poemTexts/space_debris";
+import { talentless } from "./poemTexts/talentless";
+import { theUnnamed } from "./poemTexts/the_unnamed";
+import { thrills } from "./poemTexts/thrills";
+import { timePeriod } from "./poemTexts/time_period";
+import { tooMetaTooLate } from "./poemTexts/too_meta_too_late";
+import { underStreetlamps } from "./poemTexts/under_streetlamps";
+import { untitled } from "./poemTexts/untitled";
+import { untitled2 } from "./poemTexts/untitled_2";
+import { vampires } from "./poemTexts/vampires";
 export const poems = [
   {
     id: 1,
@@ -6,7 +39,7 @@ export const poems = [
     title: "a paper boat and being meta again",
     collection: "about creating",
     color: "yellow",
-    text: "/poems/paper_boat.txt",
+    text: paperBoat,
   },
   {
     id: 2,
@@ -15,7 +48,7 @@ export const poems = [
     title: "oh, and this is from her loss of reality period",
     collection: "about creating",
     color: "yellow",
-    text: "/poems/time_period.txt",
+    text: timePeriod,
   },
   {
     id: 3,
@@ -24,7 +57,7 @@ export const poems = [
     title: "too meta, too late",
     collection: "definitely not above board",
     color: "purple",
-    text: "/poems/too_meta_too_late.txt",
+    text: tooMetaTooLate,
   },
   {
     id: 4,
@@ -33,7 +66,7 @@ export const poems = [
     title: "are you feeling california?",
     collection: "drabbles",
     color: "orange",
-    text: "/poems/california.txt",
+    text: california,
   },
   {
     id: 5,
@@ -42,7 +75,7 @@ export const poems = [
     title: "escapism expired",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/escapism.txt",
+    text: escapism,
   },
   {
     id: 6,
@@ -51,7 +84,7 @@ export const poems = [
     title: "i threw the structure out the window",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/out_the_window.txt",
+    text: outTheWindow,
   },
   {
     id: 7,
@@ -60,7 +93,7 @@ export const poems = [
     title: "laundry day",
     collection: "drabbles",
     color: "orange",
-    text: "/poems/laundry_day.txt",
+    text: laundryDay,
   },
   {
     id: 8,
@@ -69,7 +102,7 @@ export const poems = [
     title: "alien courtship",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/alien_courtship.txt",
+    text: alienCourtship,
   },
   {
     id: 9,
@@ -78,7 +111,7 @@ export const poems = [
     title: "a solar death (and other nonsense)",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/solar_death.txt",
+    text: solarDeath,
   },
   {
     id: 10,
@@ -87,7 +120,7 @@ export const poems = [
     title: "heartthrob sharpshooter",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/sharpshooter.txt",
+    text: sharpshooter,
   },
   {
     id: 11,
@@ -96,7 +129,7 @@ export const poems = [
     title: "lethal",
     collection: "color theory",
     color: "blue",
-    text: "/poems/lethal.txt",
+    text: lethal,
   },
   {
     id: 12,
@@ -105,7 +138,7 @@ export const poems = [
     title: "and flourish",
     collection: "drabbles",
     color: "orange",
-    text: "/poems/and_flourish.txt",
+    text: andFlourish,
   },
 
   {
@@ -115,7 +148,7 @@ export const poems = [
     title: "caved in",
     collection: "about creating",
     color: "yellow",
-    text: "/poems/caved_in.txt",
+    text: cavedIn,
   },
   {
     id: 14,
@@ -124,7 +157,7 @@ export const poems = [
     title: "cloud floater",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/cloud_floater.txt",
+    text: cloudFloater,
   },
   {
     id: 15,
@@ -133,7 +166,7 @@ export const poems = [
     title: "create",
     collection: "about creating",
     color: "yellow",
-    text: "/poems/create.txt",
+    text: create,
   },
   {
     id: 16,
@@ -142,7 +175,7 @@ export const poems = [
     title: "forest pt.1",
     collection: "drabbles",
     color: "orange",
-    text: "/poems/forest.txt",
+    text: forest,
   },
   {
     id: 17,
@@ -151,7 +184,7 @@ export const poems = [
     title: "hibernation / i dream about giving notice",
     collection: "drabbles",
     color: "orange",
-    text: "/poems/hibernation.txt",
+    text: hibernation,
   },
 
   {
@@ -161,7 +194,7 @@ export const poems = [
     title: "note my office hours",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/office_hours.txt",
+    text: officeHours,
   },
   {
     id: 19,
@@ -170,7 +203,7 @@ export const poems = [
     title: "ropes / lies pt.1 ",
     collection: "lies",
     color: "black",
-    text: "/poems/ropes.txt",
+    text: ropes,
   },
 
   {
@@ -180,7 +213,7 @@ export const poems = [
     title: "space debris",
     collection: "color theory",
     color: "blue",
-    text: "/poems/space_debris.txt",
+    text: spaceDebris,
   },
   {
     id: 21,
@@ -189,7 +222,7 @@ export const poems = [
     title: "talentless",
     collection: "drabbles",
     color: "orange",
-    text: "/poems/talentless.txt",
+    text: talentless,
   },
   {
     id: 22,
@@ -198,7 +231,7 @@ export const poems = [
     title: "the unnamed / lies pt. 2",
     collection: "lies",
     color: "black",
-    text: "/poems/the_unnamed.txt",
+    text: theUnnamed,
   },
   {
     id: 23,
@@ -207,7 +240,7 @@ export const poems = [
     title: "thrills / lies pt. 3",
     collection: "lies",
     color: "black",
-    text: "/poems/thrills.txt",
+    text: thrills,
   },
   {
     id: 24,
@@ -216,7 +249,7 @@ export const poems = [
     title: "under some streetlamps, somewhere around midnight",
     collection: "color theory",
     color: "blue",
-    text: "/poems/under_streetlamps.txt",
+    text: underStreetlamps,
   },
   {
     id: 25,
@@ -225,7 +258,7 @@ export const poems = [
     title: "untitled",
     collection: "color theory",
     color: "blue",
-    text: "/poems/untitled.txt",
+    text: untitled,
   },
   {
     id: 26,
@@ -234,7 +267,7 @@ export const poems = [
     title: "untitled pt. 2",
     collection: "color theory",
     color: "blue",
-    text: "/poems/untitled_2.txt",
+    text: untitled2,
   },
   {
     id: 27,
@@ -243,7 +276,7 @@ export const poems = [
     title: "dethrone",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/dethrone.txt",
+    text: dethrone,
   },
 
   {
@@ -253,7 +286,7 @@ export const poems = [
     title: "how's that for art history?",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/art_history.txt",
+    text: artHistory,
   },
   {
     id: 29,
@@ -262,7 +295,7 @@ export const poems = [
     title: "reality is what we make it to be",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/reality.txt",
+    text: reality,
   },
   {
     id: 30,
@@ -271,7 +304,7 @@ export const poems = [
     title: "release me",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/release_me.txt",
+    text: releaseMe,
   },
   {
     id: 31,
@@ -280,7 +313,7 @@ export const poems = [
     title: "vampires & French books",
     collection: "drabbles",
     color: "orange",
-    text: "/poems/vampires.txt",
+    text: vampires,
   },
   {
     id: 32,
@@ -289,7 +322,7 @@ export const poems = [
     title: "mind reading escapist",
     collection: "drabbles",
     color: "orange",
-    text: "/poems/mind_reader.txt",
+    text: mindReader,
   },
   {
     id: 33,
@@ -298,6 +331,6 @@ export const poems = [
     title: "bad taste",
     collection: "of love, light and dust",
     color: "red",
-    text: "/poems/bad_taste.txt",
+    text: badTaste,
   },
 ];
