@@ -45,7 +45,7 @@ export default function Cards() {
   }
 
   return (
-    <Container maxWidth="md">
+    <Container fixed sx={{ ml: 2 }}>
       <Box>
         <h1 className="page-title" onClick={goToPoems}>
           some poems
@@ -68,11 +68,10 @@ export default function Cards() {
           </Button>
         ))}
       </ButtonGroup>
-      <ImageList sx={{ width: 850 }} cols={3} rowHeight={200}>
+      <ImageList>
         {poems.map((item) => (
           <ImageListItem
             key={item.title}
-            sx={{ width: 250, mb: "1em" }}
             onClick={() => goToPoem(item.id)}
             className={item.color}
           >

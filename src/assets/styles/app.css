@@ -11,3 +11,54 @@ body {
   font-weight: 600;
   font-style: italic;
 }
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .MuiImageList-root {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .MuiImageListItem-root {
+    width: 300px !important;
+    height: 210px !important;
+  }
+
+  .MuiButtonGroup-root {
+    display: inline-grid !important;
+  }
+
+  .MuiButton-root {
+    justify-content: flex-start !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .MuiImageList-root {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .MuiImageListItem-root {
+    width: 230px !important;
+    height: 190px !important;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .MuiImageList-root {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .MuiImageListItem-root {
+    width: 240px !important;
+    height: 200px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .MuiImageList-root {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .MuiImageListItem-root {
+    width: 250px !important;
+    height: 210px !important;
+  }
+}

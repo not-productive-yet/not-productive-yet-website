@@ -1,7 +1,9 @@
 /* collections buttons */
 div.MuiButtonGroup-root {
   margin-left: 10pt;
+  display: table;
 }
+
 div.MuiButtonGroup-root button {
   border: none !important;
   border-radius: 0 !important;
@@ -55,10 +57,8 @@ li.MuiImageListItem-root {
 
 li.MuiImageListItem-root > img {
   display: block;
-  max-width: 260px;
-  max-height: 200px;
-  width: auto;
-  height: auto;
+  width: inherit !important;
+  height: inherit !important;
   filter: grayscale(1);
 }
 
