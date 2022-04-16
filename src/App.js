@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { Home, PageNotFound, Poem, PoemCards } from "./pages";
 import { Navbar, Footer } from "./components/";
 import { Container } from "@mui/material";
@@ -6,7 +6,7 @@ import { Container } from "@mui/material";
 export default function App() {
   return (
     <Container fixed>
-      <BrowserRouter>
+      <HashRouter basename="/">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -16,7 +16,7 @@ export default function App() {
           <Route path="poem/:collection/:poemId" element={<Poem />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </Container>
   );
