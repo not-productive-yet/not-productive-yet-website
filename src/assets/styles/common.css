@@ -44,6 +44,7 @@
 .menu-icon {
   font-size: 25pt !important;
   margin: 10pt;
+  margin-left: 0;
   display: block !important;
   color: var(--nav-orange);
   cursor: pointer;
@@ -52,10 +53,6 @@
   display: none !important;
 }
 
-.fake-drawer > .MuiPaper-root {
-  background-color: transparent !important;
-  width: fit-content !important;
-}
 /* pages */
 .page-title {
   margin-top: 5%;

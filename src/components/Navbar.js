@@ -5,35 +5,22 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const fullScreen = useMediaQuery("(min-width:900px)");
+  const isWideScreen = useMediaQuery("(min-width:600px)");
   function openMenu() {
     setOpen(true);
   }
-  const toggleDrawer = (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-
+  const toggleDrawer = () => {
     setOpen(!open);
   };
   return (
     <>
-      <Drawer
-        className="fake-drawer"
-        anchor="left"
-        variant={!fullScreen ? "permanent" : "temporary"}
-      >
-        <MenuIcon
-          className={`menu-icon ${fullScreen ? "hidden" : ""}`}
-          onClick={openMenu}
-        />
-      </Drawer>
+      <MenuIcon
+        className={`menu-icon ${isWideScreen ? "hidden" : ""}`}
+        onClick={openMenu}
+      />
       <Drawer
         anchor="left"
-        variant={fullScreen ? "permanent" : "temporary"}
+        variant={isWideScreen ? "permanent" : "temporary"}
         open={open}
         onClose={toggleDrawer}
         onClick={toggleDrawer}
