@@ -52,13 +52,13 @@ export default function Cards() {
         </h1>
       </Box>
       <ButtonGroup
+        className="collection-buttons"
         variant="text"
-        sx={{ mb: "2em" }}
         aria-label="text small button group"
       >
         {poemCollections.map((item) => (
           <Button
-            className={`${item.color} ${
+            className={`collection-btn ${item.color} ${
               collection === item.name && "selected"
             }`}
             key={item.name}
@@ -68,15 +68,19 @@ export default function Cards() {
           </Button>
         ))}
       </ButtonGroup>
-      <ImageList>
+      <ImageList className="poem-img-list">
         {poems.map((item) => (
           <ImageListItem
             key={item.title}
             onClick={() => goToPoem(item.id)}
-            className={item.color}
+            className={`poem-img-item ${item.color}`}
           >
             <img src={item.img} alt={item.imgAlt} loading="lazy" />
-            <ImageListItemBar title={item.title} subtitle={item.collection} />
+            <ImageListItemBar
+              className="poem-img-text"
+              title={item.title}
+              subtitle={item.collection}
+            />
           </ImageListItem>
         ))}
       </ImageList>

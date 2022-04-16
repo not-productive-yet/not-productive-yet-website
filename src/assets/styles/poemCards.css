@@ -1,10 +1,22 @@
 /* collections buttons */
-div.MuiButtonGroup-root {
-  margin-left: 10pt;
-  display: table;
+.collection-buttons {
+  margin-left: 10pt !important;
+  margin-bottom: 2em !important;
+  display: table !important;
 }
 
-div.MuiButtonGroup-root button {
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .collection-buttons {
+    display: inline-grid !important;
+  }
+
+  .collection-btn {
+    justify-content: left !important;
+    text-align: left;
+  }
+}
+
+.collection-buttons button {
   letter-spacing: 1.5pt;
   border: none !important;
   border-radius: 0 !important;
@@ -14,85 +26,143 @@ div.MuiButtonGroup-root button {
   font-family: "Rubik", sans-serif !important;
 }
 
-button.MuiButton-root.red:hover,
-button.MuiButton-root.red.selected {
+.collection-btn.red:hover,
+.collection-btn.red.selected {
   color: var(--red) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.yellow:hover,
-button.MuiButton-root.yellow.selected {
+.collection-btn.yellow:hover,
+.collection-btn.yellow.selected {
   color: var(--yellow) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.orange:hover,
-button.MuiButton-root.orange.selected {
+.collection-btn.orange:hover,
+.collection-btn.orange.selected {
   color: var(--orange) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.purple:hover,
-button.MuiButton-root.purple.selected {
+.collection-btn.purple:hover,
+.collection-btn.purple.selected {
   color: var(--purple) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.blue:hover,
-button.MuiButton-root.blue.selected {
+.collection-btn.blue:hover,
+.collection-btn.blue.selected {
   color: var(--light-blue) !important;
   background-color: transparent !important;
 }
 
-button.MuiButton-root.black:hover,
-button.MuiButton-root.black.selected {
+.collection-btn.black:hover,
+.collection-btn.black.selected {
   color: var(--light-gray) !important;
   background-color: transparent !important;
 }
 
 /* poem image */
-li.MuiImageListItem-root {
-  cursor: pointer;
-  margin: 10px 10px;
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .poem-img-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .poem-img-item {
+    width: inherit !important;
+    height: 220px !important;
+  }
 }
 
-li.MuiImageListItem-root > img {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .poem-img-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .poem-img-item {
+    width: 230px !important;
+    height: 190px !important;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .poem-img-list {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .poem-img-item {
+    width: 240px !important;
+    height: 200px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .poem-img-list {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .poem-img-item {
+    width: 250px !important;
+    height: 210px !important;
+  }
+}
+
+.poem-img-item {
+  cursor: pointer;
+  margin: 10px 10px;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.poem-img-item > img {
   display: block;
   width: inherit !important;
   height: inherit !important;
   filter: grayscale(1);
 }
 
-li.MuiImageListItem-root:hover > img {
-  -webkit-filter: opacity(0%);
-  filter: opacity(0%);
-  transition: all 0.5s ease;
+.poem-img-item:hover > img {
+  -webkit-filter: opacity(10%);
+  filter: opacity(10%);
 }
 
-li.MuiImageListItem-root.yellow {
+.poem-img-item:active > img {
+  -webkit-filter: opacity(0%);
+  filter: opacity(10%);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 500ms linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(5);
+  }
+}
+
+.poem-img-item.yellow {
   background-color: var(--light-yellow);
 }
 
-li.MuiImageListItem-root.purple {
+.poem-img-item.purple {
   background-color: var(--purple);
 }
-li.MuiImageListItem-root.orange {
+.poem-img-item.orange {
   background-color: var(--orange);
 }
-li.MuiImageListItem-root.red {
+.poem-img-item.red {
   background-color: var(--red);
 }
 
-li.MuiImageListItem-root.blue {
+.poem-img-item.blue {
   background-color: var(--lighter-blue);
 }
 
-li.MuiImageListItem-root.black {
+.poem-img-item.black {
   background-color: var(--gray);
 }
 
 /* poem text */
-li.MuiImageListItem-root div.MuiImageListItemBar-root {
+.poem-img-item .poem-img-text {
   background-color: transparent;
   mix-blend-mode: difference;
   position: absolute;
@@ -107,7 +177,7 @@ li.MuiImageListItem-root div.MuiImageListItemBar-root {
   font-style: normal;
 }
 
-li.MuiImageListItem-root:hover div.MuiImageListItemBar-root {
+.poem-img-item:hover .poem-img-text {
   opacity: 1;
   mix-blend-mode: difference;
 }
