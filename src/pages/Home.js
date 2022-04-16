@@ -10,11 +10,13 @@ export default function Home() {
 
   return (
     <div className="home">
-      <img
-        className="home-image"
-        src={require("../assets/images/real_artist.jpg")}
-        alt="real artist"
-      />
+      <div className="image-container">
+        <img
+          className="home-image"
+          src={require("../assets/images/real_artist.jpg")}
+          alt="real artist"
+        />
+      </div>
       <p className="home-text">(not really)</p>
       <Button className="home-button" variant="outlined" onClick={goToPoems}>
         Check out my stuff

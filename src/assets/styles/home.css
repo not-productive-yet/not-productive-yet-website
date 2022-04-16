@@ -1,3 +1,8 @@
+.image-container {
+  display: flex;
+  align-items: center; /* vertical */
+  justify-content: center;
+}
 .home-image {
   max-width: 600px;
   margin: auto;

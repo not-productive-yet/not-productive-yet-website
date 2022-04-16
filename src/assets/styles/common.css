@@ -67,8 +67,14 @@ footer {
   font-weight: 300;
   font-style: normal;
   font-size: 10pt !important;
-  margin-top: 15%;
   letter-spacing: 1pt;
+  margin-top: 5%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .heart {
