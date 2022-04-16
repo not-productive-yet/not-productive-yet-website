@@ -75,7 +75,7 @@ export default function Cards() {
             onClick={() => goToPoem(item.id)}
             className={item.color}
           >
-            <img src={item.img} alt={item.imgAlt} />
+            <img src={item.img} alt={item.imgAlt} loading="lazy" />
             <ImageListItemBar title={item.title} subtitle={item.collection} />
           </ImageListItem>
         ))}
