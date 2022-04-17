@@ -68,7 +68,7 @@
     gap: 10px !important;
   }
   .poem-img-item {
-    height: 180px !important;
+    height: 160px !important;
   }
 }
 
@@ -184,7 +184,6 @@
   text-transform: uppercase;
   overflow-wrap: break-word !important;
   white-space: break-spaces !important;
-
   font-size: 10pt !important;
   letter-spacing: 1pt;
 }
