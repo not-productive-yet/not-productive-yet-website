@@ -3,15 +3,6 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
-  .poem-title {
-    margin-top: 0;
-  }
-
-  .poem-text {
-    margin: 2em 2em !important;
-  }
-}
 .poem-text {
   white-space: break-spaces;
   line-height: 1.5em;
@@ -20,6 +11,19 @@
   font-size: 14pt;
   font-weight: 500;
   font-style: normal;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .poem-title {
+    margin-top: 0;
+    text-align: start;
+    padding: 0.2em;
+  }
+
+  .poem-text {
+    margin: 0em 0em !important;
+    padding: 0.2em;
+  }
 }
 
 .poem-collection {

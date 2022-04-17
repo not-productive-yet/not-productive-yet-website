@@ -1,6 +1,5 @@
 /* collections buttons */
 .collection-buttons {
-  margin-left: 10pt !important;
   margin-bottom: 2em !important;
   display: table !important;
 }
@@ -65,21 +64,21 @@
 /* poem image */
 @media only screen and (min-width: 0px) and (max-width: 600px) {
   .poem-img-list {
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
   }
   .poem-img-item {
-    width: inherit !important;
-    height: 220px !important;
+    height: 180px !important;
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   .poem-img-list {
     grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
   }
 
   .poem-img-item {
-    width: 230px !important;
     height: 190px !important;
   }
 }
@@ -87,10 +86,10 @@
 @media only screen and (min-width: 900px) {
   .poem-img-list {
     grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
   }
 
   .poem-img-item {
-    width: 240px !important;
     height: 200px !important;
   }
 }
@@ -98,17 +97,17 @@
 @media only screen and (min-width: 1200px) {
   .poem-img-list {
     grid-template-columns: repeat(4, 1fr) !important;
+    gap: 15px !important;
   }
 
   .poem-img-item {
-    width: 250px !important;
     height: 210px !important;
   }
 }
 
 .poem-img-item {
   cursor: pointer;
-  margin: 10px 10px;
+  width: inherit !important;
   overflow: hidden !important;
   position: relative !important;
 }

@@ -56,9 +56,12 @@
 /* pages */
 .page-title {
   margin-top: 5%;
-  margin-left: 10pt;
   font-size: 30pt;
   cursor: pointer;
+}
+
+.content-container {
+  padding: 0px !important;
 }
 
 /* footer */

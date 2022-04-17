@@ -45,7 +45,7 @@ export default function Cards() {
   }
 
   return (
-    <Container fixed sx={{ ml: 2 }}>
+    <Container className="content-container" fixed>
       <Box>
         <h1 className="page-title" onClick={goToPoems}>
           some poems

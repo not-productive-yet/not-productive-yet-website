@@ -22,6 +22,7 @@ export default function Poem() {
   let prevPoemExists = checkPrevPoemExists(paramCollection, paramId, poems);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const poem = findPoemById(poems, paramId);
     setPoem(poem);
     setCollection(paramCollection);
@@ -60,7 +61,7 @@ export default function Poem() {
   return (
     <>
       {checkPoemPageExists(poem, collection) ? (
-        <Container maxWidth="sm">
+        <Container maxWidth="sm" className="content-container">
           <div key={poem.poemId}>
             <Box>
               <div className={`poem-title ${poem.color}`}>
