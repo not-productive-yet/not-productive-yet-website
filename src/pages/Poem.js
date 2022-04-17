@@ -59,9 +59,9 @@ export default function Poem() {
   }
 
   return (
-    <>
+    <div className="content-container">
       {checkPoemPageExists(poem, collection) ? (
-        <Container maxWidth="sm" className="content-container">
+        <Container maxWidth="sm">
           <div key={poem.poemId}>
             <Box>
               <div className={`poem-title ${poem.color}`}>
@@ -104,7 +104,7 @@ export default function Poem() {
       ) : (
         <PageNotFound />
       )}
-    </>
+    </div>
   );
 }
 

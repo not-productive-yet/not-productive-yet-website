@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const isWideScreen = useMediaQuery("(min-width:600px)");
+  const isWideScreen = useMediaQuery("(min-width:900px)");
   function openMenu() {
     setOpen(true);
   }
