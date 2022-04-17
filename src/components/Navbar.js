@@ -16,7 +16,11 @@ export default function Navbar() {
   return (
     <>
       {isWideScreen ? (
-        <Drawer class="nav navbar-desktop" anchor="left" variant="permanent">
+        <Drawer
+          className="nav navbar-desktop"
+          anchor="left"
+          variant="permanent"
+        >
           <NavList />
         </Drawer>
       ) : (
