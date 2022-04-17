@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/not-productive-yet-website/static/css/main.9923f9f4.css",
-    "main.js": "/not-productive-yet-website/static/js/main.fc7f6c2c.js",
+    "main.css": "/not-productive-yet-website/static/css/main.6823d7f0.css",
+    "main.js": "/not-productive-yet-website/static/js/main.2b266ed2.js",
     "static/media/house.jpg": "/not-productive-yet-website/static/media/house.6215426762f8b19b41a5.jpg",
     "static/media/eye.jpg": "/not-productive-yet-website/static/media/eye.d51baea95ac2c0b24674.jpg",
     "static/media/stars.jpg": "/not-productive-yet-website/static/media/stars.43e1a47f37064479b467.jpg",
@@ -37,11 +37,11 @@
     "static/media/real_artist.jpg": "/not-productive-yet-website/static/media/real_artist.580b38618c91afe91853.jpg",
     "static/media/skull_flower.jpg": "/not-productive-yet-website/static/media/skull_flower.e20904b579849015a4a8.jpg",
     "index.html": "/not-productive-yet-website/index.html",
-    "main.9923f9f4.css.map": "/not-productive-yet-website/static/css/main.9923f9f4.css.map",
-    "main.fc7f6c2c.js.map": "/not-productive-yet-website/static/js/main.fc7f6c2c.js.map"
+    "main.6823d7f0.css.map": "/not-productive-yet-website/static/css/main.6823d7f0.css.map",
+    "main.2b266ed2.js.map": "/not-productive-yet-website/static/js/main.2b266ed2.js.map"
   },
   "entrypoints": [
-    "static/css/main.9923f9f4.css",
-    "static/js/main.fc7f6c2c.js"
+    "static/css/main.6823d7f0.css",
+    "static/js/main.2b266ed2.js"
   ]
 }
