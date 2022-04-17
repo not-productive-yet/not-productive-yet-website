@@ -70,13 +70,17 @@
 
 .content-container {
   padding: 0px !important;
+  margin: auto !important;
+}
+
+.poem-cards.content-container {
   margin-left: 3em !important;
   margin-right: 3em !important;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 900px) {
   .content-container {
-    margin-left: auto !important;
+    margin: auto !important;
   }
 }
 /*---------- footer ----------*/

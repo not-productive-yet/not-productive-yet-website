@@ -45,7 +45,7 @@ export default function Cards() {
   }
 
   return (
-    <Container className="content-container" fixed>
+    <Container className="poem-cards content-container" fixed>
       <Box>
         <h1 className="page-title" onClick={goToPoems}>
           some poems
@@ -75,7 +75,7 @@ export default function Cards() {
             onClick={() => goToPoem(item.id)}
             className={`poem-img-item ${item.color}`}
           >
-            <img src={item.img} alt={item.imgAlt} loading="lazy" />
+            <img src={item.img} alt={item.imgAlt} />
             <ImageListItemBar
               className="poem-img-text"
               title={item.title}
