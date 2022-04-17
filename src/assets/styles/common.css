@@ -1,4 +1,4 @@
-/* nav */
+/*---------- nav ----------*/
 .nav > .MuiPaper-root {
   background-color: var(--nav-orange) !important;
 }
@@ -17,10 +17,9 @@
   color: var(--nav-hover-offwhite);
 }
 
-.nav-link.title:hover {
+.nav-logo:hover {
   color: var(--black) !important;
 }
-
 /* mobile only */
 @media only screen and (max-width: 800px) {
   .nav-list {
@@ -57,13 +56,12 @@
   .MuiListItem-root {
     margin: 2em !important;
   }
-  .nav-link.title {
-    rotate: 90deg;
-    margin-left: 140%;
+  .nav-logo {
+    rotate: 270deg;
   }
 }
 
-/* pages */
+/*---------- pages ----------*/
 .page-title {
   margin-top: 5%;
   font-size: 30pt;
@@ -81,7 +79,7 @@
     margin-left: auto !important;
   }
 }
-/* footer */
+/*---------- footer ----------*/
 footer {
   text-align: center;
   font-weight: 300;

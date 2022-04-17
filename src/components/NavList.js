@@ -1,18 +1,38 @@
 import { List, ListItem } from "@mui/material";
 import { Link } from "react-router-dom";
+import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
+
+const navListItems = [
+  {
+    text: "Poems",
+    link: "/poems",
+  },
+  {
+    text: "Stories",
+    link: "",
+  },
+  {
+    text: "Spare Thoughts",
+    link: "",
+  },
+  {
+    text: "Other",
+    link: "",
+  },
+];
 
 export default function NavList() {
   return (
     <List className="nav-list">
       <ListItem>
-        <Link className="nav-link title" to="/">
-          <h1>cool title</h1>
+        <Link className="nav-link" to="/">
+          <SentimentSatisfiedAltIcon className="nav-logo" />
         </Link>
       </ListItem>
-      {["Poems", "Stories", "Spare Thoughts", "Other"].map((text, index) => (
-        <ListItem button key={text}>
-          <Link className="nav-link" to="/poems">
-            {text}
+      {navListItems.map((item) => (
+        <ListItem button key={item.text}>
+          <Link className="nav-link" to={item.link}>
+            {item.text}
           </Link>
         </ListItem>
       ))}
